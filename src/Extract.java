@@ -7,7 +7,7 @@ public class Extract {
 
 	public static void main(String[] args) {
 		try {  
-            InputStream is = new FileInputStream("lib/list");  
+            InputStream is = new FileInputStream("liblist");  
             BufferedReader reader = new BufferedReader(  
                     new InputStreamReader(is));  
             String str = null;  
