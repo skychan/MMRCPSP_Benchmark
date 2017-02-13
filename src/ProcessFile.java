@@ -32,6 +32,7 @@ public class ProcessFile {
                     if (nbLine == 6) {
 						// get number of jobs
                     	String[] temp = lineTxt.split(":  ");
+//                    	String[] temp = lineTxt.split("\\s+");
 //                    	System.out.println(temp[1]);
                     	list.add(temp[1]);
                     	nbTask = Integer.parseInt(temp[1]);
@@ -56,6 +57,12 @@ public class ProcessFile {
 //						System.out.println(temp2[0]);
 						list.add(temp2[0]);
 						list.add(" ");
+					}
+                    
+                    if (nbLine == 15) {
+						String[] temp = lineTxt.split("\\s+");
+						
+						list.add(temp[4]);
 					}
                     
                     if (nbLine >= 19 && nbLine < 19 + nbTask) {

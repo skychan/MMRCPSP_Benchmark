@@ -34,13 +34,18 @@ public class Extract {
                 }
                 else  
                     break;  
-            }  
+            }
             reader.close();  
             is.close();
         } catch (Exception e) {  
             e.printStackTrace();  
         }
-		
+//		try {
+//			ProcessFile.wash("src/j302_8.mm", "src/output");
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//			e.printStackTrace();
+//		}
 		
 
 	}
